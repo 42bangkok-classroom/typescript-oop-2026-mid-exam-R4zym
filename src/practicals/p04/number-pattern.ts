@@ -4,22 +4,20 @@ const arg3: string = process.argv[2];
 const num1: number = Number(arg3);
 
 
-let pattern = "";
-if (num1 < 1 || isNaN(num1) || arg3 == undefined || arg3 == null || !arg3 || isNaN(num1) === false) {
-
-}
+let n1 = "";
+if (num1 < 1 || isNaN(num1) || arg3 == undefined || arg3 == null || !arg3 || isNaN(num1) === false) {}
 for (let i = 1; i <= num1; i++) {
     for (let j = 1; j <= (num1-i); j++) {
-        pattern += " ";
+        n1 += " ";
     }
 
     for (let k = i ; k > 0; k -= 1) {
-        pattern += k;
+        n1 += k;
     }
-    pattern += "\n";
+    n1 += "\n";
+    console.log(n1)
 }
 
-console.log(pattern); 
 
 
 
