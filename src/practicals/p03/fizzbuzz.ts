@@ -7,7 +7,7 @@ if (isNaN(N) || arg2 == undefined || arg2 == null || !arg2 || N < 0 || isNaN(N) 
 
 } 
 
-console.log(N)
+let n: number;
 
 for (let i = 0; i < N + 1; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
@@ -17,6 +17,6 @@ for (let i = 0; i < N + 1; i++) {
     } else if (i % 5 == 0) {
         console.log("Buzz")
     } else {
-        console.log(i);
+        n = i
     }
 }
