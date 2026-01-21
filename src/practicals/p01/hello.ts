@@ -1,3 +1,14 @@
 // Write your code below
 
-test
+class CustomError extends Error {
+    constructor(message: string) {
+      super(message);
+      this.name = 'CustomError';
+    }
+  }
+  
+  try {
+    // Code that might throw a CustomError
+    throw new CustomError('Something went wrong!');
+  } 
+  
